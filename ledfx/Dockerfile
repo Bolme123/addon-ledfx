@@ -7,8 +7,18 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Copy Python requirements file
 COPY requirements.txt /tmp/
-COPY aubio-0.4.9.tar.gz /tmp/
-
+COPY packages/aubio-0.4.9.tar.gz /tmp/
+COPY packages/certifi-2020.12.5-py2.py3-none-any.whl /tmp
+COPY packages/chardet-2.1.1.tar.gz /tmp
+COPY packages/Cython-0.29.21-py2.py3-none-any.whl /tmp
+COPY packages/dsdev-utils-1.0.5.tar.gz /tmp
+COPY packages/Jinja2-2.10.1-py2.py3-none-any.whl /tmp
+COPY packages/MarkupSafe-0.23.tar.gz /tmp
+COPY packages/multidict-5.0.0.tar.gz /tmp
+COPY packages/numpy-1.20.2-cp39-none-any.whl /tmp
+COPY packages/pkgconfig-1.5.1-py2.py3-none-any.whl /tmp
+COPY packages/PyNaCl-1.4.0.tar.gz /tmp
+COPY packages/attrs-17.3.0-py2.py3-none-any.whl /tmp
 # Setup base
 ARG BUILD_ARCH=amd64
 RUN \
