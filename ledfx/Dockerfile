@@ -44,7 +44,19 @@ RUN \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
-    && pip3 install aubio==0.4.9 --no-index --find-links file:///tmp/aubio-0.4.9.tar.gz \
+    && pip3 install \
+        aubio==0.4.9 \
+        certifi==2020.12.5 \
+        Cython==0.29.21 \
+        Jinja2==2.10.1 \
+        numpy==1.20.2 \
+        pkgconfig==1.5.1 \
+        PyNaCl==1.4.0 \
+        dsdev-utils==1.0.5 \
+        MarkupSafe==0.23 \
+        multidict==5.0.0 \
+        chardet==2.1.1 \
+        --no-index --find-links file:///tmp/ \
     && rm -fr \
         /tmp/* \
         /etc/nginx \
