@@ -34,7 +34,7 @@ RUN \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
-    && pip3 install aubio==0.4.9 --no-index --find-links file:///tmp/aubio-0.4.9.tar.gz
+    && pip3 install aubio==0.4.9 --no-index --find-links file:///tmp/aubio-0.4.9.tar.gz \
     && rm -fr \
         /tmp/* \
         /etc/nginx \
