@@ -13,12 +13,12 @@ ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r2 \
-        cython=0.29.21-r1 \
-        g++=10.2.1_pre1-r3 \
+        cython=0.29.22-r2 \
+        g++=10.3.1_git20210424-r2 \
         gcc=10.3.1_git20210424-r2 \
-        gfortran=10.2.1_pre1-r3 \
-        openblas-dev=0.3.13-r0 \
-        python3-dev=3.8.10-r0 \
+        gfortran=10.3.1_git20210424-r2 \
+        openblas-dev=dev-0.3.15-r0 \
+        python3-dev=dev-3.9.5-r1 \
         zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.2-r1 \
