@@ -10,7 +10,7 @@
   "hassio_api": true,
   "auth_api": true,
   "map": ["ssl"],
-  "image": "assgrenade/{arch}-addon-ledfx:dev",
+  "image": "assgrenade/{arch}-addon-ledfx",
   "ports": {
     "80/tcp": 5333
   },
