@@ -17,8 +17,8 @@ RUN \
         g++=10.3.1_git20210424-r2 \
         gcc=10.3.1_git20210424-r2 \
         gfortran=10.3.1_git20210424-r2 \
-        openblas-dev=dev-0.3.15-r0 \
-        python3-dev=dev-3.9.5-r1 \
+        openblas-dev=0.3.15-r0 \
+        python3-dev=3.9.5-r1 \
         zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.2-r1 \
