@@ -42,9 +42,6 @@ RUN \
         py3-pip=20.3.4-r1 \
         python3=3.9.5-r1 \
     && pip3 install \
-        --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
-        --no-cache-dir -r /tmp/requirements.txt \
-    && pip3 install \
         aubio==0.4.9 \
         certifi==2020.12.5 \
         Cython==0.29.21 \
@@ -57,6 +54,9 @@ RUN \
         multidict==5.0.0 \
         chardet==2.1.1 \
         --no-index --find-links file:///tmp/ \
+    && pip3 install \
+        --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
+        --no-cache-dir -r /tmp/requirements.txt \
     && rm -fr \
         /tmp/* \
         /etc/nginx \
