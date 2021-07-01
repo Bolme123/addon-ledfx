@@ -22,13 +22,13 @@ RUN \
         zlib-dev=1.2.11-r3 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.2-r1 \
-        ffmpeg-libs=4.3.1-r3 \
-        nginx=1.18.0-r13 \
-        openblas=0.3.13-r0 \
+        ffmpeg-libs=4.4-r1 \
+        nginx=1.20.1-r3 \
+        openblas=0.3.15-r0 \
         portaudio-dev=190600.20161030-r1 \
-        pulseaudio=14.1-r0 \
-        pulseaudio-alsa=14.1-r0 \
-        py3-pip=20.3.4-r0 \
+        pulseaudio=14.2-r5 \
+        pulseaudio-alsa=14.2-r5 \
+        py3-pip=20.3.4-r1 \
         python3=3.8.10-r0 \
     && pip3 install \
         --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
