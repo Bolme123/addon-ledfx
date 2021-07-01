@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Copy Python requirements file
 COPY requirements.txt /tmp/
-COPY   aubio-0.4.9.tar.gz /tmp/
+COPY aubio-0.4.9.tar.gz /tmp/
 
 # Setup base
 ARG BUILD_ARCH=amd64
