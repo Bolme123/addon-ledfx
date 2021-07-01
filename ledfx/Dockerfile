@@ -31,7 +31,7 @@ RUN \
         py3-pip=20.3.4-r1 \
         python3=3.9.5-r1 \
     && pip3 install \
-        --find-links "https://wheels.home-assistant.io/alpine-3.14/${BUILD_ARCH}/" \
+        --find-links "https://wheels.home-assistant.io/alpine-3.13/${BUILD_ARCH}/" \
         --no-cache-dir -r /tmp/requirements.txt \
     && rm -fr \
         /tmp/* \
