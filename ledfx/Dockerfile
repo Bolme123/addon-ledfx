@@ -24,7 +24,7 @@ ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r2 \
-        cython=0.29.21 \
+        cython=0.29.22-r2 \
         g++=10.3.1_git20210424-r2 \
         gcc=10.3.1_git20210424-r2 \
         gfortran=10.3.1_git20210424-r2 \
