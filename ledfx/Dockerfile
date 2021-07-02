@@ -35,6 +35,7 @@ RUN \
         alsa-plugins-pulse=1.2.2-r1 \
         ffmpeg-libs=4.4-r1 \
         nginx=1.20.1-r3 \
+        aubio=0.4.9-r0 \
         openblas=0.3.15-r0 \
         portaudio-dev=190600.20161030-r1 \
         pulseaudio=14.2-r5 \
