@@ -24,7 +24,7 @@ ARG BUILD_ARCH=amd64
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r2 \
-        cython=0.29.22-r2 \
+        cython=0.29.21 \
         g++=10.3.1_git20210424-r2 \
         gcc=10.3.1_git20210424-r2 \
         gfortran=10.3.1_git20210424-r2 \
@@ -41,6 +41,7 @@ RUN \
         pulseaudio-alsa=14.2-r5 \
         py3-pip=20.3.4-r1 \
         python3=3.9.5-r1 \
+    && pip3 list \
     && pip3 install \
         aubio==0.4.9 \
         certifi==2020.12.5 \
